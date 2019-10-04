@@ -1,0 +1,16 @@
+import random
+import sys
+x = random.randint(0,100)
+
+for i in range(7):
+    y = int(input("输入猜的数字："))
+    if x == y:
+        print("猜对了")
+        sys.exit()
+    elif y > x :
+        print("此数字偏大")
+    elif y < x:
+        print("此数字偏小")
+    
+
+ 

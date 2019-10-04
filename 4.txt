@@ -1,0 +1,8 @@
+x = int(input('请输入一个正整数'))
+
+i = ""
+while x>0:
+    y = x % 10
+    x = x // 10
+    i = str(i)+str(y)
+print("逆序数为",i)

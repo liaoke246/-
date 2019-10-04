@@ -1,0 +1,11 @@
+class dog :
+    def bark(self):
+        print("汪汪汪")
+    def creep(self2):
+        print("汪(指狗说他要向前匍匐)")
+       
+Doge = dog()
+
+Doge.bark()
+
+Doge.creep()       

@@ -1,0 +1,9 @@
+x = input("ÊäÈëÒ»¸ö×Ö·û´®")
+b = "back-end"
+
+print(x[-8:])
+if x[-8:] == b:
+    print("YES")
+else:
+    print("NO")
+

@@ -1,0 +1,29 @@
+m = int(input(">>>"))
+n = int(input(">>>"))
+alist = []
+b = ""
+blist = []
+for i in range(m,n):
+    c = len(str(i))
+    c = int(c)
+    a = int(i)
+    while a > 0:
+        x = a % 10
+        a = a // 10
+        b = str(b) + str(x)
+        
+        d = b[-c:]
+    alist.append(d)
+print("这堆数字的反序数为:",alist)
+
+for o in alist:
+    o = int(o)
+    for j in range(2,o):
+        if o % j == 0:
+            break
+    
+    else:
+        blist.append(o)
+print(blist)
+
+

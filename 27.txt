@@ -1,0 +1,8 @@
+a = 0
+b = 1 
+print("b为第一项")
+for i in range(34):
+    a , b = b , a + b
+    
+print(b)
+

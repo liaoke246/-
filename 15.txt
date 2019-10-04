@@ -1,0 +1,16 @@
+import sys
+x = input("输入点东西:")
+
+if x.isdigit():
+    
+    y = int(x)
+else:
+    print("这个不是年份")
+    sys.exit()
+    
+if y % 4 == 0 and y % 100 != 0:
+    print("这个是闰年")
+elif y % 400 ==0:
+    print("这个是闰年")
+else:
+    print("这不是闰年")

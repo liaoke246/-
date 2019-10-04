@@ -1,0 +1,20 @@
+import random
+
+
+a = ['1','2','3','4','5','6','7','8','9']
+b  = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+c = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+e = random.sample(a,1)+random.sample(b,1)+random.sample(c,2)
+
+
+
+print("".join(e))
+d = "".join(e)
+
+x = input("请输入验证码")
+
+if x == d:
+    print("输入正确")
+else:
+    print("错误")

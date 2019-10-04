@@ -1,0 +1,20 @@
+b = []
+print("输入想要组成列表的几个数字，如果不想继续输入则输入s")
+for q in range(999):
+    x = input(">>>")
+    if x == "s":
+        break
+    else:
+        x = int(x)
+        b.append(x)
+    
+c = len(b)
+num = 1
+lt = []
+for i in range(c):
+    for j in range(c):
+        num = num * b[j]
+    num = num / b[i]
+    lt.append(num)
+    num = 1
+print(lt)

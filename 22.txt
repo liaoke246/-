@@ -1,0 +1,27 @@
+import time
+
+print(time.strftime("%Y-%m-%d %H:%M:%S"))
+
+plist = [31,28,31,30,31,30,31,31,30,31,30,31]
+
+rlist = [31,29,31,30,31,30,31,31,30,31,30,31] 
+
+a = time.strftime("%d")
+day = int(a)
+
+b = time.strftime("%m")
+month = int(b)
+
+c = time.strftime("%Y")
+year = int(c)
+day2 = 0
+if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0): 
+    for i in rlist[:month-1]:
+        day2 += i
+        
+else:
+    for i in plist[:month-1]:
+        day2 += i
+print(f"现在是今年得第{day + day2}天！！")
+
+ 

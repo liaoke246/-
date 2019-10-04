@@ -1,0 +1,6 @@
+class BMI:
+    def __init__(height,weight):
+        x = weight/(height**2)
+        return x
+
+print(BMI.__init__(1.85,70))        

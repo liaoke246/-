@@ -1,0 +1,8 @@
+a = 35
+b = 94
+for x in range(a):
+    y = a - x
+    if 2 * x + 4 * y == 94:
+        print(f"这里有{x}只鸡。")
+        print(f"这里有{y}只兔子")
+        

@@ -1,0 +1,17 @@
+x = input("请输入一个字符串")
+a = 0
+b = 0
+c = 0
+
+
+
+
+for i in x:
+    if i.isalpha():
+        a += 1
+    elif i.isnumeric():
+        b += 1
+    else:
+        c += 1
+print(f"内有{a}个字母，{b}个数字，{c}个其他东西")
+        

@@ -1,0 +1,10 @@
+
+    x = input("请输入带符号的温度值")
+if x[-1] in ['C','c']:
+    f = 1.8*float(x[0:-1])+32
+    print("转换后的温度为:%.2fF"%f)
+elif x[-1] in ['F','f']:
+    c=(float(x[0:-1])-32)*1.8
+    print('转换后的温度为：%.2fC'%c)
+else:
+    print("输入有误")

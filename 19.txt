@@ -1,0 +1,25 @@
+import sys
+b = []
+print("输入想要组成列表的几个数字，如果不想继续输入则输入s")
+for q in range(999999999999):
+    x = input(">>>")
+    if x == "s":
+        break
+    else:
+        x = int(x)
+        b.append(x)
+print(b)        
+k = int(input("输入你想要查找列表第几大的数"))
+if k == 1:
+        c = max(b)
+        print("第k项最大值为:",c)
+        sys.exit()
+
+for i in range(k-1):
+    
+    if k > 1:
+        d = max(b)
+        b.remove(d)
+        e = max(b)    
+print("第k项最大值为",e)    
+    

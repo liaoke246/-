@@ -1,0 +1,7 @@
+a = input("ÊäÈëÒ»´®×Ö·û")
+b = []
+
+for c in a:
+    
+    b.append(ord(c))
+print(b)
